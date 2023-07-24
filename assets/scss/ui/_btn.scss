@@ -1,0 +1,206 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: $font-primary;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: $color-7;
+    transition: 0.1s;
+    min-height: 38px;
+
+    &>div {
+        display: flex;
+        align-items: center
+    }
+
+    svg {
+        fill: $bg-color;
+        max-width: 15px;
+        max-height: 15px;
+    }
+
+    &:hover {
+        color: $bg-color;
+    }
+
+    .icon {
+        svg {
+            fill: $color-7;
+            max-width: 16px;
+            max-height: 16px;
+        }
+    }
+
+    span+.icon {
+        margin-left: 10px
+    }
+}
+
+.btn-full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+}
+
+.btn-primary {
+    background-color: $bg-primary;
+    color: $text-color-btn;
+
+    svg {
+        fill: rgba(255, 255, 255, 0.8);
+    }
+
+    &:hover {
+        svg {
+            fill: $color-7;
+        }
+    }
+}
+
+.btn-white {
+    background-color: $text-primary;
+    color: $bg-color;
+}
+
+.btn-default {
+    background-color: $line-color;
+    color: $bg-color;
+
+    svg {
+        fill: rgba(var(--bg-color), 0.65);
+    }
+
+    &:hover {
+        background-color: $bg-primary;
+        color: rgb(24, 23, 22);
+
+        svg {
+            fill: $text-primary;
+        }
+    }
+}
+
+.btn-danger {
+    background-color: rgb(189, 23, 23);
+
+    svg {
+        fill: rgba(255, 255, 255, 0.8);
+    }
+
+    &:hover {
+        background-color: rgb(175, 23, 23);
+
+        svg {
+            fill: $color-7;
+        }
+    }
+}
+
+.btn-success {
+    box-shadow: 0px 0px 10px rgba(15, 253, 27, 0.3);
+    background-color: rgb(29, 180, 54);
+
+    svg {
+        fill: rgba(255, 255, 255, 0.8);
+    }
+
+    &:hover {
+        background-color: rgb(31, 173, 54);
+
+        svg {
+            fill: $color-7;
+        }
+    }
+
+    &.btn-inverse {
+        background-color: $line-color;
+        color: $bg-color;
+
+        &:hover {
+            color: $text-primary;
+            background-color: rgb(29, 180, 54);
+        }
+    }
+}
+
+.btn:disabled,
+.btn[disabled] {
+    cursor: default;
+    background-color: rgba(var(--text-secondary), 0.2);
+    color: $bg-color; //$line-color
+
+    svg {
+        fill: $bg-color; //$line-color
+    }
+}
+
+
+.btn-big {
+    padding: 20px 40px;
+    border-radius: 100px;
+    span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    span+.icon {
+        margin-left: 20px
+    }
+}
+
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: transparent;
+
+    &:before {
+        content: '';
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background-color: $bg-primary;
+        top: 0;
+        right: 0;
+        transition: 0.2s width;
+    }
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background-color: $color-7;
+        //background: linear-gradient(137deg, #FF2B1E 0%, #FF1577 100%);
+        //background: #FF2B1E;
+        top: 0;
+        left: -10%;
+        transition: 0.2s width;
+        transform: skew(30deg, 0);
+    }
+
+    &:hover {
+        color: $color-2;
+        .icon {
+            svg {
+                fill: $color-2;
+            }
+        }
+
+        &:before {
+            width: 0;
+        }
+
+        &:after {
+            width: 120%;
+        }
+    }
+}

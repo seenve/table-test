@@ -1,0 +1,111 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Gilroy", sans-serif;
+    //font-style: italic;
+    font-weight: 700;
+    position: relative;
+    color: $text-primary;
+    margin: 0;
+}
+
+h1.italic,
+h2.italic,
+h3.italic,
+h4.italic,
+h5.italic {
+    font-family: "ProximaNova", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+p {
+    font-family: "ProximaNova", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.line {
+    &:before {
+        content: "";
+        width: 20px;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0), $bg-primary);
+        position: absolute;
+        left: -30px;
+        z-index: 1;
+        top: calc(50% - 1px);
+        height: 2px;
+    }
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: $bg-primary;
+        position: absolute;
+        left: -32px;
+        z-index: 1;
+        top: calc(50% - 2px);
+    }
+}
+
+.theme-light .line {
+    &:before {
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $bg-primary);
+    }
+}
+
+h6 {
+    font-size: $text-small-size;
+    font-weight: 600;
+    color: rgba(var(--text-secondary), 0.5);
+}
+h5 {
+    font-size: $h5-size;
+}
+h4 {
+    font-size: $h4-size;
+    line-height: 120%;
+}
+h3 {
+    font-size: $h3-size;
+}
+h2 {
+    font-size: $h2-size;
+}
+h1 {
+    font-size: $h1-size;
+}
+
+@media screen and (max-width: 976px) {
+	h1 {
+		font-size: 42px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+    h3 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+	h2 {
+		font-size: 34px;
+	}
+    h3 {
+        font-size: 26px;
+    }
+	.container {
+		padding: 0px 30px;
+	}
+}
+
+
+
+
+label {
+    color: $text-secondary;
+}

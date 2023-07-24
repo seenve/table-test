@@ -1,0 +1,54 @@
+@include font('Rubik', normal, 300, '~/assets/fonts/Rubik/Rubik-Light.woff', 'woff');
+@include font('Rubik', normal, 500, '~/assets/fonts/Rubik/Rubik-Regular.woff', 'woff');
+@include font('Rubik', normal, 600, '~/assets/fonts/Rubik/Rubik-Medium.woff', 'woff');
+@include font('Rubik', normal, 700, '~/assets/fonts/Rubik/Rubik-Bold.woff', 'woff');
+@include font('Rubik', normal, 900, '~/assets/fonts/Rubik/Rubik-Black.woff', 'woff');
+
+@include font('RubikOne', normal, 300, '~/assets/fonts/Rubik/RubikMonoOne-Regular.woff', 'woff');
+
+@include font('Gilroy', normal, 100, '~/assets/fonts/Gilroy/Gilroy-Thin.woff', 'woff');
+@include font('Gilroy', normal, 200, '~/assets/fonts/Gilroy/Gilroy-Light.woff', 'woff');
+@include font('Gilroy', normal, 300, '~/assets/fonts/Gilroy/Gilroy-Regular.woff', 'woff');
+@include font('Gilroy', normal, 700, '~/assets/fonts/Gilroy/Gilroy-Bold.woff', 'woff');
+@include font('Gilroy', normal, 900, '~/assets/fonts/Gilroy/Gilroy-Black.woff', 'woff');
+
+@include font('Menlo', normal, 300, '~/assets/fonts/Menlo/Menlo-Regular.woff', 'woff');
+
+@include font('Raleway', normal, 300, '~/assets/fonts/Raleway/Raleway-Regular.woff', 'woff');
+@include font('Raleway', normal, 700, '~/assets/fonts/Raleway/Raleway-Bold.woff', 'woff');
+
+@include font('ProximaNova', normal, 100, '~/assets/fonts/ProximaNova/ProximaNova-ThinIt.woff', 'woff');
+@include font('ProximaNova', normal, 200, '~/assets/fonts/ProximaNova/ProximaNova-Light.woff', 'woff');
+@include font('ProximaNova', normal, 300, '~/assets/fonts/ProximaNova/ProximaNova-Regular.woff', 'woff');
+@include font('ProximaNova', normal, 500, '~/assets/fonts/ProximaNova/ProximaNova-Semibold.woff', 'woff');
+@include font('ProximaNova', italic, 700, '~/assets/fonts/ProximaNova/ProximaNova-BoldIt.woff', 'woff');
+
+@include font('Nunito', normal, 300, '~/assets/fonts/Nunito/Nunito-Regular.woff', 'woff');
+@include font('Nunito', normal, 500, '~/assets/fonts/Nunito/Nunito-SemiBold.woff', 'woff');
+
+@include font('MPLUSRounded1c', normal, 300, '~/assets/fonts/MPLUSRounded1c/RoundedMplus1c-Regular.woff', 'woff');
+@include font('MPLUSRounded1c', normal, 500, '~/assets/fonts/MPLUSRounded1c/RoundedMplus1c-Medium.woff', 'woff');
+
+@include font('UbuntuMono', normal, 300, '~/assets/fonts/UbuntuMono/ubuntumono.woff', 'woff');
+@include font('UbuntuMono', normal, 500, '~/assets/fonts/UbuntuMono/ubuntumonobold.woff', 'woff');
+
+@include font('SF UI Display', normal, 100, '~/assets/fonts/SFUIDisplay/SFUIDisplay-Thin.woff', 'woff');
+@include font('SF UI Display', normal, 200, '~/assets/fonts/SFUIDisplay/SFUIDisplay-Light.woff', 'woff');
+@include font('SF UI Display', normal, 300, '~/assets/fonts/SFUIDisplay/SFUIDisplay-Regular.woff', 'woff');
+@include font('SF UI Display', normal, 500, '~/assets/fonts/SFUIDisplay/SFUIDisplay-Medium.woff', 'woff');
+@include font('SF UI Display', normal, 600, '~/assets/fonts/SFUIDisplay/SFUIDisplay-Medium.woff', 'woff');
+@include font('SF UI Display', normal, 700, '~/assets/fonts/SFUIDisplay/SFUIDisplay-Bold.woff', 'woff');
+
+@include font('ArianMono', normal, 700, '~/assets/fonts/ArianMono/ArianAMUMonoBold.woff', 'woff');
+
+@include font('SourceCodePro', normal, 900, '~/assets/fonts/SourceCodePro/SourceCodePro-Black.woff', 'woff');
+
+
+
+//@include font('Gilroy', normal, 400, '~assets/fonts/Gilroy/Gilroy-Regular.woff2', 'woff2');
+
+//@include font('HelveticaNeueCyr', normal, 500, '~assets/fonts/HelveticaNeueCyr-Medium.woff', 'woff');
+//@include font('HelveticaNeueCyr', normal, 500, '~assets/fonts/HelveticaNeueCyr-Medium.woff2', 'woff2');
+
+//@include font('HelveticaNeueCyr', normal, 900, '~assets/fonts/HelveticaNeueCyr-Bold.woff', 'woff');
+//@include font('HelveticaNeueCyr', normal, 900, '~assets/fonts/HelveticaNeueCyr-Bold.woff2', 'woff2');
